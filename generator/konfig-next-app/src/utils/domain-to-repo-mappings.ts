@@ -111,6 +111,10 @@ export const domainToRepoMappings: Record<
     owner: 'passiv',
     repo: 'snaptrade-sdks',
   },
+  'docs-new.snaptrade.com': {
+    owner: 'passiv',
+    repo: 'snaptrade-sdks',
+  },
   'documentation.groundx.ai': {
     owner: 'groundxai',
     repo: 'groundx-sdks',
