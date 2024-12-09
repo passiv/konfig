@@ -40,7 +40,7 @@ export async function cloudflareImageFromGitHub({
   // base64 to File object
   const file = new File([Buffer.from(base64, 'base64')], path)
 
-  const account_id = 'ea6df732f6c006b5d1f0742e77d04bad'
+  const account_id = 'b35c9b68d6b2f16b0f2eb54e2e77ab32'
   const image = await client.images.v1.create({
     account_id,
     file,
@@ -68,5 +68,5 @@ export async function cloudflareImageFromGitHub({
 }
 
 function cdnUrl(id: string) {
-  return `https://imagedelivery.net/_1crbAaQeumZ563oexraHA/${id}/public`
+  return `customer-3t5uxampqy6rufej.cloudflarestream.com/_1crbAaQeumZ563oexraHA/${id}/public`
 }
