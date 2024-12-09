@@ -68,5 +68,5 @@ export async function cloudflareImageFromGitHub({
 }
 
 function cdnUrl(id: string) {
-  return `customer-3t5uxampqy6rufej.cloudflarestream.com/`
+  return `https://imagedelivery.net/S3UVfCx1bhNQLUjPjBLrKg/${id}/public`
 }
