@@ -74,8 +74,8 @@ services:
     staticPublishPath: ./out
     repo: https://github.com/konfig-dev/konfig
     rootDir: misc/konfig-demo-product-landing-page
-    domains:
-      - apidemo.konfigthis.com
+    # domains:
+    #   - apidemo.konfigthis.com
 
   - type: redis
     name: github-api-cache
@@ -126,8 +126,8 @@ services:
     buildFilter:
       paths:
       - generator/konfig-dash/**/*
-    domains:
-      - "*.konfig.dev"
+    # domains:
+    #   - "*.konfig.dev"
     envVars:
       - key: GITHUB_API_REDIS_CACHE
         fromService:
@@ -156,8 +156,8 @@ services:
     region: oregon
     repo: https://github.com/konfig-dev/konfig
     rootDir: generator/konfig-changeset-bot
-    domains:
-      - changeset-bot.konfigthis.com
+    # domains:
+    #   - changeset-bot.konfigthis.com
     buildCommand: yarn; yarn next build
     startCommand: yarn next start
     envVars:
@@ -221,8 +221,8 @@ services:
     region: oregon
     repo: https://github.com/konfig-dev/konfig
     rootDir: generator/konfig-dash
-    domains:
-      - api.konfigthis.com
+    # domains:
+    #   - api.konfigthis.com
     buildCommand: ./bash-scripts/build-render.sh
     startCommand: yarn rw deploy render api --prisma=false --data-migrate=false
     envVars:
@@ -295,8 +295,8 @@ services:
     buildCommand: yarn install; yarn build
     staticPublishPath: ./build
     repo: https://github.com/konfig-dev/konfig
-    domains:
-      - docs.konfigthis.com
+    # domains:
+    #   - docs.konfigthis.com
     envVars:
       - key: NODE_VERSION
         value: 18.18.0
@@ -306,7 +306,7 @@ services:
 databases:
   - name: konfig-db
     region: oregon
-    plan: starter
+    plan: basic
 
 envVarGroups:
   - name: cloudflare
