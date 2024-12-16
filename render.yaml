@@ -141,7 +141,7 @@ services:
   #         property: hostport
   #     - fromGroup: openai
   #     - fromGroup: cloudflare
-      - fromGroup: github
+      # - fromGroup: github
   #     - key: OPENAI_API_KEY
   #       sync: false
   #     - key: NPM_TOKEN
@@ -176,7 +176,7 @@ services:
   #   envVars:
   #     - fromGroup: npm
   #     - fromGroup: aws
-      - fromGroup: github
+      # - fromGroup: github
   #     - key: SESSION_SECRET
   #       generateValue: true
   #     - key: SKIP_INSTALL_DEPS
@@ -228,7 +228,7 @@ services:
     envVars:
       - fromGroup: npm
       - fromGroup: aws
-      - fromGroup: github
+      # - fromGroup: github
       - key: NOTION_API_KEY
         sync: false
       - key: SESSION_SECRET
