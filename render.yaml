@@ -306,7 +306,7 @@ services:
 databases:
   - name: konfig-db
     region: oregon
-    plan: basic
+    plan: basic-4gb
 
 envVarGroups:
   - name: cloudflare
