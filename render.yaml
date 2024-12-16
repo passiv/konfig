@@ -228,7 +228,7 @@ services:
     envVars:
       - fromGroup: npm
       - fromGroup: aws
-      - fromGroup: github
+      # - fromGroup: github
       - key: NOTION_API_KEY
         sync: false
       - key: SESSION_SECRET
