@@ -60,7 +60,7 @@ services:
     env: static
     buildCommand: yarn; yarn export
     staticPublishPath: ./out
-    repo: https://github.com/konfig-dev/konfig
+    repo: https://github.com/passiv/konfig
     rootDir: konfigthis.com
     routes:
       - type: rewrite
@@ -72,7 +72,7 @@ services:
     env: static
     buildCommand: yarn; yarn build; yarn next export
     staticPublishPath: ./out
-    repo: https://github.com/konfig-dev/konfig
+    repo: https://github.com/passiv/konfig
     rootDir: misc/konfig-demo-product-landing-page
     # domains:
     #   - apidemo.konfigthis.com
@@ -120,7 +120,7 @@ services:
   #   env: node
   #   buildCommand: ./build-render.sh
   #   startCommand: ./start-render.sh
-  #   repo: https://github.com/konfig-dev/konfig
+  #   repo: https://github.com/passiv/konfig
   #   rootDir: generator/konfig-next-app
   #   plan: standard
   #   buildFilter:
@@ -154,7 +154,7 @@ services:
   #   plan: free
   #   env: node
   #   region: oregon
-  #   repo: https://github.com/konfig-dev/konfig
+  #   repo: https://github.com/passiv/konfig
   #   rootDir: generator/konfig-changeset-bot
   #   # domains:
   #   #   - changeset-bot.konfigthis.com
@@ -168,7 +168,7 @@ services:
   #   plan: starter
   #   env: node
   #   region: oregon
-  #   repo: https://github.com/konfig-dev/konfig
+  #   repo: https://github.com/passiv/konfig
   #   rootDir: generator/konfig-dash
   #   buildCommand: yarn && yarn build && yarn rw build api
   #   startCommand: yarn rw deploy render api --prisma=false --data-migrate=false
@@ -207,7 +207,7 @@ services:
   #   name: konfig-openapi-generator-api-sales
   #   env: docker
   #   rootDir: generator/konfig-generator-api
-  #   repo: https://github.com/konfig-dev/konfig
+  #   repo: https://github.com/passiv/konfig
   #   autoDeploy: false
   #   envVars:
   #     - fromGroup: aws
@@ -219,7 +219,7 @@ services:
     plan: starter
     env: node
     region: oregon
-    repo: https://github.com/konfig-dev/konfig
+    repo: https://github.com/passiv/konfig
     rootDir: generator/konfig-dash
     # domains:
     #   - api.konfigthis.com
@@ -275,14 +275,14 @@ services:
     env: python
     buildCommand: ./build.sh
     startCommand: ./start.sh
-    repo: https://github.com/konfig-dev/konfig
+    repo: https://github.com/passiv/konfig
     rootDir: generator/konfig-python-formatter-server-blackd
 
   - type: pserv
     name: konfig-openapi-generator-api
     env: docker
     rootDir: generator/konfig-generator-api
-    repo: https://github.com/konfig-dev/konfig
+    repo: https://github.com/passiv/konfig
     envVars:
       - fromGroup: aws
       - key: PORT
@@ -294,7 +294,7 @@ services:
     rootDir: generator/konfig-docs
     buildCommand: yarn install; yarn build
     staticPublishPath: ./build
-    repo: https://github.com/konfig-dev/konfig
+    repo: https://github.com/passiv/konfig
     # domains:
     #   - docs.konfigthis.com
     envVars:
